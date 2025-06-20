@@ -30,4 +30,31 @@ public class ProductService {
             System.out.println("❌ Error fetching products: " + e.getMessage());
         }
     }
+    public void searchProduct(int id) {
+        Product p = dao.getProductById(id);
+        if (p != null) {
+            System.out.println(p);
+        } else {
+            System.out.println("Product not found!");
+        }
+    }
+
+    public void updateProduct(Product p) {
+        boolean updated = dao.updateProduct(p);
+        if (updated) {
+            System.out.println("Product updated successfully.");
+        } else {
+            System.out.println("Update failed.");
+        }
+    }
+
+    public void deleteProduct(int id) {
+        boolean deleted = dao.deleteProduct(id);
+        if (deleted) {
+            System.out.println("Product deleted.");
+        } else {
+            System.out.println("Product not found or delete failed.");
+        }
+    }
+
 }

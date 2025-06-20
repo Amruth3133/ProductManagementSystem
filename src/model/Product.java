@@ -31,7 +31,7 @@ public class Product {
         return unitPrice;
     }
 
-    public void SetProductId(int productId)
+    public void setProductId(int productId)
     {
         this.productId=productId;
     }
@@ -46,5 +46,11 @@ public class Product {
     public void setUnitPrice(double unitPrice)
     {
         this.unitPrice=unitPrice;
+    }
+    public String toString() {
+        return "Product ID: " + productId +
+                ", Name: " + productName +
+                ", Category: " + category +
+                ", Price: ₹" + unitPrice;
     }
 }
