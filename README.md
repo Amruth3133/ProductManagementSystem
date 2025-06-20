@@ -15,9 +15,9 @@ This mini project allows users to manage products with the following features:
 
 - ✅ Add a new product
 - 📋 View all products
-- 🔍 (Coming Soon) Search product by ID
-- 📝 (Coming Soon) Update product
-- ❌ (Coming Soon) Delete product
+- 🔍 Search product by ID
+- 📝 Update product
+- ❌ Delete product
 
 All product data is stored in a **MySQL database** using **JDBC connection**.
 
